@@ -1,0 +1,61 @@
+/*hide the loader until clicking the submit button*/
+
+#loader {
+    display: none;
+}
+
+
+/*loader styles*/
+
+#loader:before {
+    content: "";
+    border-radius: 50%;
+    border: 3px solid var(--border-color);
+    border-top: 3px solid #fff;
+    margin: auto;
+    animation: spin 1s linear infinite;
+    -webkit-animation: spin 1s linear infinite;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+/*loader animation*/
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+
+
+/*reload page button*/
+
+#reload-btn {
+    background-color: #c11d1d;
+    border: none;
+    outline: none;
+    display: none;
+    padding: 2vh 1vw;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.1);
+    margin-bottom: 5vh;
+}

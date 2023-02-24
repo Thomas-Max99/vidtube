@@ -1,0 +1,170 @@
+@media screen and (min-width: 770px) {
+    #loader::before {
+        width: 20px;
+        height: 20px;
+    }
+    #video-title {
+        font-size: 1.1em;
+    }
+    #video-info {
+        line-height: 25px
+    }
+    #video-info h4 {
+        font-size: 0.9em;
+    }
+    .download-buttons button {
+        height: 45%;
+        width: 60%;
+    }
+    footer span {
+        font-size: 0.7em;
+    }
+    #social-media i {
+        font-size: 1.7em;
+    }
+}
+
+@media screen and (max-width: 770px) and (min-width: 425px) {
+    nav h2 {
+        font-size: 1.3em;
+    }
+    #loader::before {
+        width: 15px;
+        height: 15px;
+    }
+    #error-message {
+        bottom: -40px;
+        left: 20px;
+        font-size: 0.7em;
+    }
+    #video-info {
+        line-height: 20px
+    }
+    #thumbnail-container img {
+        width: 130px;
+        object-fit: contain;
+    }
+    #video-title {
+        font-size: 0.9em;
+    }
+    #video-info h4 {
+        font-size: 0.7em;
+    }
+    .download-buttons button {
+        width: 70%;
+        height: 50%;
+    }
+    #available-formats-container div h5,
+    .download-buttons button {
+        font-size: 0.7em;
+    }
+    footer span {
+        font-size: 0.6em;
+    }
+    #social-media i {
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    nav h2 {
+        font-size: 1.1em;
+    }
+    #video-url-btn {
+        font-size: 10px
+    }
+    #loader::before {
+        width: 12px;
+        height: 12px;
+    }
+    #error-message {
+        bottom: -30px;
+        left: 15px;
+        font-size: 0.6em;
+    }
+    #video-info {
+        line-height: 15px;
+    }
+    #video-title {
+        font-size: 0.7em;
+    }
+    #video-info h4 {
+        font-size: 0.5em;
+    }
+    #thumbnail-container img {
+        width: 100px;
+        object-fit: contain;
+    }
+    #available-formats-container header {
+        font-size: 1em;
+    }
+    .download-buttons button {
+        width: 80%;
+        height: 50%;
+    }
+    #available-formats-container div h5,
+    .download-buttons button {
+        font-size: 0.6em;
+    }
+    footer span {
+        font-size: 0.5em;
+    }
+    #social-media i {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width:770px) {
+    main {
+        width: 90%
+    }
+    main h3 {
+        font-size: 1.2em;
+    }
+    main h4 {
+        font-size: 0.8em;
+    }
+    #flip-container {
+        min-height: 4rem;
+    }
+    #flip-container input,
+    #flip-container button,
+    #loader {
+        height: 2rem;
+    }
+    #flip-container,
+    #back-side {
+        max-height: 120px !important
+    }
+}
+
+@media (max-width:770px) and (orientation:landscape),
+(min-width:771px) and (orientation:landscape) {
+    nav button {
+        padding: 3vh 0
+    }
+    #main-container {
+        margin-top: 13vh;
+        min-height: 87vh;
+    }
+    #flip-container input {
+        padding: 3px 5px;
+    }
+    footer {
+        padding: 2vh 0
+    }
+}
+
+@media (min-width:771px) {
+    main {
+        width: 70%
+    }
+    #flip-container {
+        min-height: 4rem;
+    }
+    #flip-container input,
+    #flip-container button,
+    #loader {
+        height: 2rem;
+    }
+}

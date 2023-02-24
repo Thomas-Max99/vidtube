@@ -1,0 +1,25 @@
+/*styling the back side that rotates after fetching the video info  */
+
+#back-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+    transform: perspective(2000px) rotateY(-180deg);
+    letter-spacing: 1px;
+    max-height: 150px;
+}
+
+
+/*video thumbnail*/
+
+#thumbnail-container img {
+    border-radius: 5px;
+}
+
+
+/*video info*/
+
+#video-info {
+    width: 60%;
+}

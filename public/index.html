@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referre"
+    />
+    <!--CSS-->
+    <!--Main styles-->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!--Media queries-->
+    <link rel="stylesheet" href="../css/mediaQuery.css">
+
+    <!--loader styles-->
+    <link rel="stylesheet" href="../css/loader.css">
+
+    <!--show video details-->
+    <link rel="stylesheet" href="../css/videoDetails.css">
+
+    <!--Video formats-->
+    <link rel="stylesheet" href="../css/videoFormats.css">
+
+    <meta name="title" content="VidTube - Online Youtube video downloader">
+    <meta name="description" content="Convert and download any YouTube video in MP4, MP3, webm and opus.">
+    <meta name="keywords" content="Youtube, video, download,downloader, online downloader, Audio YouTube, YouTube">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    
+    <title>VidTube -Online YouTube Downloader</title>
+</head>
+
+<body>
+
+    <!--Nav bar-->
+    <nav>
+        <!--reload the page after clicking the nav bar-->
+        <button onclick="location.reload()">
+        <!--Logo-->
+        <h2>YouTube Downloader <i class="fas fa-arrow-alt-circle-down"></i></h2></button>
+    </nav>
+    <section id="main-container">
+        <!--make input field for the youtube video link-->
+        <main id="main">
+            <header>
+                <h3>Convert and download</h3>
+                <h4>any YouTube video in MP4, MP3, webm and opus</h4>
+            </header>
+            <div id="flip-container">
+                <!--the side that contains video details-->
+                <div id="back-side"></div>
+
+                <!--where the user will input the video url and click submit button-->
+                <div id="front-side">
+                    <!--The error message that will appear for the user, if he entered wrong url-->
+                    <h5 id="error-message"></h5>
+
+                    <input type="text" id="video-url-input" placeholder="Enter video link">
+                    <button type="submit" id="video-url-btn"> Convert</button>
+                    <!--add loader that will appear after clicking the button-->
+                    <div id="loader"></div>
+                </div>
+
+            </div>
+        </main>
+
+        <!--reload the page after clicking the button-->
+        <div><button onclick="location.reload()" type="button" id="reload-btn"><i class="fas fa-redo"></i> convert again</button></div>
+        <!--available formats for downloading-->
+        <section id="available-formats-container">
+
+            <!--download video and audio together-->
+            <section id="video-audio-formats">
+                <header>
+                    <h3>Video and Audio</h3>
+                </header>
+
+            </section>
+
+            <!--download video only-->
+            <section id="video-only-formats">
+                <header>
+                    <h3>Video only</h3>
+                </header>
+
+            </section>
+
+            <!--download audio only-->
+            <section id="audio-only-formats">
+                <header>
+                    <h3>Audio only</h3>
+                </header>
+
+            </section>
+
+        </section>
+        <!--footer-->
+        <footer id="footer">
+            <div></div>
+            <span>&copy;2022 VidTube</span>
+        </footer>
+    </section>
+</body>
+
+<!--JavaScript-->
+<!--fetch video info-->
+<script src="../JavaScript/fetchAPi.js"></script>
+<!--Add styles-->
+<script src="../JavaScript/styles.js"></script>
+<!--show the video info to the user-->
+<script src="../JavaScript/showVideoInfo.js"></script>
+<!--show available formats for downloading-->
+<script src="../JavaScript/showAvailableFormats.js"></script>
+<!--send download request to the server-->
+<script src="../JavaScript/downloadRequest.js"></script>
+
+</html>

@@ -1,0 +1,169 @@
+/*available formats for downloading styles*/
+
+
+/*Formats container*/
+
+#available-formats-container {
+    height: 0;
+    width: 90%;
+    overflow: hidden;
+    flex-direction: column;
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -ms-transition: 1s ease;
+    -o-transition: 1s ease;
+}
+
+#available-formats-container header {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+/*formats properties container*/
+
+.formats-properties {
+    width: 100%;
+    margin: 5vh 0 10vh;
+    display: grid;
+    grid-template-columns: 10% repeat(3, 1fr) 25%;
+    grid-template-rows: 1fr;
+    box-shadow: 1px 1px 15px rgba(157, 157, 157, 0.1);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+/*video only formats properties container*/
+
+#video-only-formats .formats-properties {
+    height: 42vh;
+    overflow-y: scroll;
+}
+
+
+/*video only container | scroll bar*/
+
+#video-only-formats .formats-properties::-webkit-scrollbar {
+    width: 10px;
+}
+
+#video-only-formats .formats-properties::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#video-only-formats .formats-properties::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#video-only-formats .formats-properties div h5:first-child {
+    position: sticky;
+    top: 0;
+}
+
+
+/*odd rows background color*/
+
+#available-formats-container div h5:nth-child(odd),
+.download-buttons div:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/*even rows background color*/
+
+#available-formats-container div h5:nth-child(even),
+.download-buttons div:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/*text styles*/
+
+#available-formats-container div h5 {
+    width: 100%;
+    text-align: center;
+}
+
+#available-formats-container div h5 {
+    padding: 3vh 0;
+}
+
+#available-formats-container .download-buttons h5 {
+    padding: 0;
+}
+
+
+/*download buttons container*/
+
+.download-buttons {
+    display: grid;
+}
+
+#available-formats-container .download-buttons h5,
+.download-buttons div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*download buttons*/
+
+.download-buttons button {
+    outline: none;
+    border: none;
+    background-color: #c11d1d;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+.download-buttons button:hover {
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+}
+
+
+/*add border radius to the formats properties*/
+
+.format-order h5:first-child {
+    border-top-left-radius: 5px;
+}
+
+.download-buttons h5:first-child {
+    border-top-right-radius: 5px;
+}
+
+.format-order h5:last-child {
+    border-bottom-left-radius: 5px;
+}
+
+.download-buttons div:last-child {
+    border-bottom-right-radius: 5px;
+}
