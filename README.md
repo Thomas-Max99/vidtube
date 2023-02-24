@@ -1,6 +1,5 @@
 # JS-Youtube-downloader
 Download Youtube videos using NodeJS and express
-You can try it from here : https://js-youtube-downloader.herokuapp.com/
 
 ## What did I learn?
 - Node js and Express: <br>
